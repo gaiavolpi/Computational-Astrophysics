@@ -1,0 +1,19 @@
+# retrieved parameters
+Planet radius :	1.194 (+0.004, -0.006) Rj
+Planet temperature : 1197 (+174, -127) K
+log_H2O : -3.49	(+0.46, -0.48)	
+log_CO2 : -6.3 (+1.8, -2.6)	
+log_CO : -6.2 +/- 2.5	
+log_Na : -3.2 (-0.7, +1.1)
+log_K :	-5.6 (-1.4, +2.3)
+
+# real parameters
+Real planet radius :  1.2 +/- 0.1 Rj
+Real planet temperature :  1285 +/- 20 K
+
+# retrieved parameters from reference paper
+log_H2O paper : -3.59 +/- 0.35
+log_CO paper : -3.25 (-5.06, +0.91)
+log_CO2 paper : -4.38 (-0.47, +0.57)
+log_Na paper : -6.85 (-2.48, +3.10)
+log_K paper: -8.04 (-1.22, +1.71)

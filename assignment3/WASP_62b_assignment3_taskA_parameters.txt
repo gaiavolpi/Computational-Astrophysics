@@ -1,11 +1,11 @@
-Star radius: 1.28
- Star temperature: 6230.0
+Star radius : 1.28
+ Star temperature : 6230.0
 
- T_irr = 1415.0 
- planet_mass = 0.58 
- planet_radius = 1.39 
+ T_irr : 1415.0 
+ planet_mass : 0.58 
+ planet_radius : 1.39 
 
- logH20 = -3.1491167022733535 
- logCH4 = -5.732652626238991 
- logCO2 = -4.626366434042687 
- logCO = -6.712151502282615 
+ logH20 : -3.1491167022733535 
+ logCH4 : -5.732652626238991 
+ logCO2 : -4.626366434042687 
+ logCO : -6.712151502282615 

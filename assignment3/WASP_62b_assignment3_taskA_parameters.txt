@@ -1,7 +1,7 @@
 Star radius : 1.28
  Star temperature : 6230.0
 
- T_irr : 1415.0 
+ T : 1415.0 
  planet_mass : 0.58 
  planet_radius : 1.39 
 

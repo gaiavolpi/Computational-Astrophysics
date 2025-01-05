@@ -1,0 +1,12 @@
+ExoCTK_file : '/home/menegattig/sketchbook/python_notebooks/comp_astro_24/assignment2/ExoCTK_results.txt'
+
+t0 : 0.0                        #time of inferior conjunction
+per : 4.4                       #orbital period
+rp : 0.11                      #planet radius (in units of stellar radii)
+a : 9.73                        #semi-major axis (in units of stellar radii)
+inc : 88.6                      #orbital inclination (in degrees)
+ecc : 0.                       #eccentricity
+w : 90.                        #longitude of periastron (in degrees)
+limb_dark : "quadratic"        #limb darkening model
+
+title: 'WASP_62'  #Title of the plot

@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "daneel"
 version = "0.0.1"
-authors = [{ name = "Tiziano Zingales", email = "tiziano.zingales@unipd.it" }]
+authors = [{ name = "Giacomo Menegatti", email = "giacomo.menegatti@studenti.unipd.it" }]
 description = "A practical example to detect and characterize exoplanets"
 readme = "README.md"
 requires-python = ">=3.10"

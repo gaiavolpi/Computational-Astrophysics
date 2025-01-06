@@ -11,7 +11,10 @@ authors = [
 description = "Daneel detection package"
 readme = "README.md"
 requires-python = ">=3.8"
-dependencies = ["numpy", "matplotlib", "batman-package"]
+
+dynamic = ["dependencies"]
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
 
 
 classifiers = [
@@ -19,3 +22,6 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
+
+[project.scripts]
+daneel = "daneel.__main__:main"

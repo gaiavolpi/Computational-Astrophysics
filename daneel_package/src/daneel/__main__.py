@@ -1,6 +1,8 @@
 import argparse
 from .detection.transit import *
 from .parameters.parameters import Parameters
+from .atmosphere.retrieval import *
+from .atmosphere.model import *
 
 def main():
     parser = argparse.ArgumentParser()
@@ -21,6 +23,13 @@ def main():
         required=False,
     )
 
+    parser.add_argument(
+        "-a",
+        "--atmosphere",
+        dest = 'action',
+        required=False,
+    )
+
     args = parser.parse_args()
     print('\nReading input file:')
     print(f'--- {args.input_file}\n')
@@ -34,6 +43,15 @@ def main():
         print(f'Plotting transit of {planet_name}')
         #Plot transit
         plot_transit(input_pars)
+
+    if args.action == 'retrieve':
+        # Retrieve the atmospheric composition of the planet
+
+        retrieve_atmosphere(input_pars)
+
+    elif args.action == 'model':
+        # Create a model of a transmission spectrum
+        create_transmission_model(input_pars)
         
 
 if __name__ == '__main__':

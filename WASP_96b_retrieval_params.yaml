@@ -1,0 +1,34 @@
+# Path to the xsecs and cia data
+
+xsecs : "/home/menegattig/Downloads/atmosphere/xsecs"
+cia : "/home/menegattig/Downloads/atmosphere/cia/hitran"
+
+#Star properties
+star_temperature : 5540
+star_radius : 1.05
+
+#Planet properties
+planet_radius : 1.0 
+planet_mass : 0.498
+T : 1200 #Isothermal temperature
+
+# Atmosphere main components
+fill_gas : ["H2", "He"]
+ratio : 0.17
+atm_min_pressure : 1.0E+0 
+atm_max_pressure : 1.0E+6
+
+gas : ["H20", "CO", "CO2", "Na", "K"]
+cia_pairs : ["H2-H2", "H2-He"]
+
+# observed spectrum
+obs : "/home/menegattig/sketchbook/python_notebooks/comp_astro_24/assignment3/WASP-96b_pruned_spectrum.dat"
+
+params_to_fit : ["planet_radius", "T", "H20", "CO2", "CO", "K", "Na"]
+bounds_to_fit : [[1000,2000], [0.8,2.1], [1.0e-10,1.0e-1], [1.0e-10,1.0e-1], [1.0e-10,1.0e-1], [1.0e-10,1.0e-1], [1.0e-10,1.0e-1]]
+true_values : [1.2, 1285, -3.59, -4.38,-3.25,-6.85, -8.04]
+
+planet_name : "WASP-96"
+
+# Number of live points to use in the Nested sampling
+fit_live_points : 50

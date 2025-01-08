@@ -1,0 +1,26 @@
+# Path to the xsecs and cia data
+
+xsecs : "/home/menegattig/Downloads/atmosphere/xsecs"
+cia : "/home/menegattig/Downloads/atmosphere/cia/hitran"
+
+# Star parameters
+star_radius : 1.28
+star_temperature : 6230.0
+
+# Planet properties
+T : 1415.0 
+planet_mass : 0.58 
+planet_radius : 1.39 
+
+# Atmosphere main components
+fill_gas : ["H2", "He"]
+ratio : 0.17
+atm_min_pressure : 1.0E+0 
+atm_max_pressure : 1.0E+6
+
+cia_pairs : ["H2-H2", "H2-He"]
+
+gas : ["H20", "CH4", "CO2", "CO"]
+abundance : [-3.1491167022733535, -5.732652626238991, -4.626366434042687, -6.712151502282615]
+
+planet_name : 'WASP-62b'

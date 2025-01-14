@@ -36,7 +36,7 @@ The simualtion of an exoplanetary atmosphere is done by typing in a terminal the
   daneel -i input_file.yaml -a model
   ```
 
-  The input_file.yaml
+  The input_file.yaml contains the physical and atmospheric parameters of the planet (use [WASP_62_model]() as an example). This will produce a simulated spectrum image (__planet_name_spectrum.png__) and a table of transit depths (i.e., the ratio $(R_P/R_*)^2$) at each wavelength (__planet_name_spectrum.dat__) .
 
 ## Atmospheric retrieval
 
@@ -45,3 +45,6 @@ With this method, daneel performs a retrieval of an exoplanetary atmosphere by r
   ```sh
   daneel -i input_file.yaml -a retrieve
   ```
+
+
+<!-- MARKDOWN LINKS & IMAGES -->

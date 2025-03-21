@@ -1,7 +1,7 @@
-# Path to the xsecs and cia data
+# Change to the correct path to the xsecs and cia data, need to download them 
 
-xsecs : "/home/menegattig/Downloads/atmosphere/xsecs"
-cia : "/home/menegattig/Downloads/atmosphere/cia/hitran"
+xsecs : "./Downloads/atmosphere/xsecs"
+cia : "./Dowloads/atmosphere/cia/hitran"
 
 # Star parameters
 star_radius : 1.28

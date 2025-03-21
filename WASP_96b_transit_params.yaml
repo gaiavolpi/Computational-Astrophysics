@@ -1,4 +1,4 @@
-ExoCTK_file : '/home/menegattig/sketchbook/python_notebooks/comp_astro_24/assignment2/ExoCTK_results.txt'
+ExoCTK_file : './assignment2/ExoCTK_results.txt'
 
 t0 : 0.0                        #time of inferior conjunction
 per : 4.4                       #orbital period

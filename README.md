@@ -27,7 +27,7 @@ This method of the daneel package is contained in the **detection** folder. It u
   daneel -i input_file.yaml -t
   ```
 
-  The *input_file.yaml* (e.g., [WASP_96b_transit_params](https://github.com/gaiavolpi/comp_astro_24/blob/main/WASP_96b_transit_params.yaml))contains the orbital parameters and the stellar properties. The method returns a plot of the lightcurve.
+  The *input_file.yaml* (e.g., [WASP_96b_transit_params](https://github.com/enricogrippi/comp_astro_24/blob/main/WASP_96b_transit_params.yaml))contains the orbital parameters and the stellar properties. The method returns a plot of the lightcurve.
 
 ## Atmospheric simulation
 
@@ -38,7 +38,7 @@ The simualtion of an exoplanetary atmosphere is done by typing in a terminal the
   daneel -i input_file.yaml -a model
   ```
 
-  The *input_file.yaml* contains the physical and atmospheric parameters of the planet (use [WASP_62_model](https://github.com/gaiavolpi/comp_astro_24/blob/main/WASP_62b_model.yaml) as an example). This will produce a simulated spectrum image (*planet_name_spectrum.png*) and a table of transit depths (i.e., the ratio $(R_P/R_*)^2$) at each wavelength (*planet_name_spectrum.dat*). You need to install the xsecs and cia data from [drive](https://drive.google.com/drive/folders/1ZVAL5Ifi4C7OiIDq5swlZJLfUzMUB7QC?hl=it=) and write the correct path in [WASP_62_model](https://github.com/gaiavolpi/comp_astro_24/blob/main/WASP_62b_model.yaml). 
+  The *input_file.yaml* contains the physical and atmospheric parameters of the planet (use [WASP_62_model](https://github.com/enricogrippi/comp_astro_24/blob/main/WASP_62b_model.yaml) as an example). This will produce a simulated spectrum image (*planet_name_spectrum.png*) and a table of transit depths (i.e., the ratio $(R_P/R_*)^2$) at each wavelength (*planet_name_spectrum.dat*). You need to install the xsecs and cia data from [drive](https://drive.google.com/drive/folders/1ZVAL5Ifi4C7OiIDq5swlZJLfUzMUB7QC?hl=it=) and write the correct path in [WASP_62_model](https://github.com/enricogrippi/comp_astro_24/blob/main/WASP_62b_model.yaml). 
 
 ## Atmospheric retrieval
 
@@ -48,6 +48,6 @@ With this method, daneel performs a retrieval of an exoplanetary atmosphere.
   daneel -i input_file.yaml -a retrieve
   ```
 
-The input file contains the path to a measured transit depth table (for example, [WASP-96](https://github.com/gaiavolpi/comp_astro_24/blob/main/WASP_96_b_3.11667_5310_1.tbl)) and the parameters that will be fitted (use [WASP_96b_retrieval_params](https://github.com/gaiavolpi/comp_astro_24/blob/main/WASP_96b_retrieval_params.yaml) as an example). You need to install the xsecs and cia data from [drive](https://drive.google.com/drive/folders/1ZVAL5Ifi4C7OiIDq5swlZJLfUzMUB7QC?hl=it=) and write the correct path in [WASP_62_model](https://github.com/gaiavolpi/comp_astro_24/blob/main/WASP_62b_model.yaml).   
+The input file contains the path to a measured transit depth table (for example, [WASP-96](https://github.com/enricogrippi/comp_astro_24/blob/main/WASP_96_b_3.11667_5310_1.tbl)) and the parameters that will be fitted (use [WASP_96b_retrieval_params](https://github.com/enricogrippi/comp_astro_24/blob/main/WASP_96b_retrieval_params.yaml) as an example). You need to install the xsecs and cia data from [drive](https://drive.google.com/drive/folders/1ZVAL5Ifi4C7OiIDq5swlZJLfUzMUB7QC?hl=it=) and write the correct path in [WASP_62_model](https://github.com/enricogrippi/comp_astro_24/blob/main/WASP_62b_model.yaml).   
 
 The package will return the fitted spectrum, the best fit parameters and a corner plot of the posterior distribution.
